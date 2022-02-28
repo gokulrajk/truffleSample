@@ -26,7 +26,7 @@ contract BankAccount {
         return false;
     }
 
-    function balanceOf(address accountHolder) constant returns (uint256 balance) {
+    function balanceOf(address accountHolder) returns (uint256 balance) {
         return balances[accountHolder];
     }
 }
